@@ -1,42 +1,9 @@
 import java.util.HashMap;
 
 class Maps {
-    //saugo raidžių atitikimą skaitmenim
-    static HashMap hashMap(){
-
-        HashMap<String, String>letersToNumbers = new HashMap<>();
-        letersToNumbers.put("A", "10");
-        letersToNumbers.put("B", "11");
-        letersToNumbers.put("C", "12");
-        letersToNumbers.put("D", "13");
-        letersToNumbers.put("E", "14");
-        letersToNumbers.put("F", "15");
-        letersToNumbers.put("G", "16");
-        letersToNumbers.put("H", "17");
-        letersToNumbers.put("I", "18");
-        letersToNumbers.put("J", "19");
-        letersToNumbers.put("K", "20");
-        letersToNumbers.put("L", "21");
-        letersToNumbers.put("M", "22");
-        letersToNumbers.put("N", "23");
-        letersToNumbers.put("O", "24");
-        letersToNumbers.put("P", "25");
-        letersToNumbers.put("Q", "26");
-        letersToNumbers.put("R", "27");
-        letersToNumbers.put("S", "28");
-        letersToNumbers.put("T", "29");
-        letersToNumbers.put("U", "30");
-        letersToNumbers.put("V", "31");
-        letersToNumbers.put("W", "32");
-        letersToNumbers.put("X", "33");
-        letersToNumbers.put("Y", "34");
-        letersToNumbers.put("Z", "35");
-
-        return letersToNumbers;
-    }
 
     //saugo Iban šalių kodų ilgius (šalis nustatoma pagal 2 Iban simbolius)
-    static HashMap contryIban(){
+    static HashMap contryIBANLenght(){
 
         HashMap<String, Integer> ibanLenght = new HashMap<>();
 

@@ -17,8 +17,7 @@ public class GuiApl extends JDialog {
         setModal(true);
 
         checkIbanButton.addActionListener(e -> {
-        String iban = typeInIbanTextField.getText();
-        IbanBoolean.setText(String.valueOf(IbanValidation.validateIban(iban)));
+            IbanBoolean.setText(String.valueOf(IbanValidation.validateIban(typeInIbanTextField.getText())));
         });
         selectFileButton.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
@@ -31,7 +30,7 @@ public class GuiApl extends JDialog {
         });
         checkFileIbanButton.addActionListener(e -> {
             try {
-                if(!didectoryTextField.getText().isEmpty() &&  IbanValidation.fileCheck(new File(didectoryTextField.getText()))) {
+                if(!didectoryTextField.getText().isEmpty() &&  FileHandler.fileCheck(new File(didectoryTextField.getText()))) {
                     JOptionPane.showMessageDialog(new JFrame(),
                             "Viskas atlikata sekmingai perziurekite rezultatus faile '.out");
                 }else {
